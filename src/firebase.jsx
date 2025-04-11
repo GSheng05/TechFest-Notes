@@ -7,13 +7,16 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCc4pmydkKcWvMWtdL_3POMcxuatGYavQ4",
-  authDomain: "techfest-8f66a.firebaseapp.com",
-  projectId: "techfest-8f66a",
-  storageBucket: "techfest-8f66a.firebasestorage.app",
-  messagingSenderId: "530505669745",
-  appId: "1:530505669745:web:977ac87d907293fc8e0fd0"
+  apiKey: "AIzaSyCyt5S9FcdgKhE4MGfwa1zXSVafQopIlkg",
+  authDomain: "techfest-notesfirebase.firebaseapp.com",
+  projectId: "techfest-notesfirebase",
+  storageBucket: "techfest-notesfirebase.firebasestorage.app",
+  messagingSenderId: "1035434404870",
+  appId: "1:1035434404870:web:8f586e6bb7d2b436e8e787",
+  measurementId: "G-WRFFKFQHMS"
 };
+
+
 
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

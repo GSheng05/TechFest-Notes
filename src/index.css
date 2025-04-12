@@ -149,8 +149,12 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* Red-orange gradient background */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
+  z-index: 1000;
 }
 
 .signin-card {
@@ -162,6 +166,21 @@ textarea:focus {
   text-align: center;
   max-width: 400px;
   width: 90%;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Make sure the body and root have full height */
+body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Reset any conflicting styles */
+* {
+  box-sizing: border-box;
 }
 
 /* Add specific size constraints for the Firebase logo */
@@ -169,6 +188,10 @@ textarea:focus {
   width: 100px;
   height: 100px;
   margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
 }
 
 .signin-card h2 {
@@ -196,6 +219,7 @@ textarea:focus {
   font-family: 'Google Sans', Roboto, Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.2s;
+  gap: 10px;
 }
 
 .google-signin-btn:hover {

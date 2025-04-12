@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "firebase": "^11.4.0",
+    "firebase": "^11.6.0",
     "firebase-tools": "^13.34.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

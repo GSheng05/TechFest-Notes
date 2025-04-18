@@ -7,13 +7,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCyt5S9FcdgKhE4MGfwa1zXSVafQopIlkg",
-  authDomain: "techfest-notesfirebase.firebaseapp.com",
-  projectId: "techfest-notesfirebase",
-  storageBucket: "techfest-notesfirebase.firebasestorage.app",
-  messagingSenderId: "1035434404870",
-  appId: "1:1035434404870:web:8f586e6bb7d2b436e8e787",
-  measurementId: "G-WRFFKFQHMS"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 
